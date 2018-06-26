@@ -7,7 +7,6 @@ import android.support.v4.app.NotificationManagerCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -29,11 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent resultIntent = null;
         switch (v.getId()) {
             case R.id.btnFirstActivity:
-                resultIntent = new Intent(this, SecondActivity.class);
+                resultIntent = new Intent(this, FirstActivity.class);
                 resultIntent.putExtra("notificationText", "Go to the first activity in the app");
                 break;
             case R.id.btnSecondActivity:
-                resultIntent = new Intent(this, ThirdActivity.class);
+                resultIntent = new Intent(this, SecondActivity.class);
                 resultIntent.putExtra("notificationText", "Go to the second activity in the app");
                 break;
         }
